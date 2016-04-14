@@ -1,0 +1,134 @@
+\hypertarget{class_v_d_machine_1_1_vending_machine_frame}{}\section{V\+D\+Machine.\+Vending\+Machine\+Frame Class Reference}
+\label{class_v_d_machine_1_1_vending_machine_frame}\index{V\+D\+Machine.\+Vending\+Machine\+Frame@{V\+D\+Machine.\+Vending\+Machine\+Frame}}
+
+
+Inheritance diagram for V\+D\+Machine.\+Vending\+Machine\+Frame\+:
+% FIG 0
+
+
+Collaboration diagram for V\+D\+Machine.\+Vending\+Machine\+Frame\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Box\+Label}
+\item 
+class {\bfseries Button\+Panel}
+\item 
+class {\bfseries Title\+Panel}
+\item 
+class {\bfseries Vending\+Machine\+Panel}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_v_d_machine_1_1_vending_machine_frame_ab7111fa7a43314902474063faf9a530e}{Vending\+Machine\+Frame} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_v_d_machine_1_1_vending_machine_frame_a60df9516f3b8666657b1878e3ccde2e6}{main} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Vending\+Machine\+Frame과 Vending\+Machine을 하나로 합쳤기 때문에 Vending\+Machine클래스는 따로 만들지 않음
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vending\+Machine\+Program} & 자판기 시뮬레이션 패널 \\
+\hline
+{\em product} & 제품의 갯수가 여러개이므로 List를 사용 \\
+\hline
+{\em change} & 거스름돈 반환기능을 포함 \\
+\hline
+{\em money} & 사용자가 투입하는 돈 \\
+\hline
+{\em M\+A\+X\+S\+I\+ZE} & 통의 크기이자 각 제품의 최대 갯수를 15로 설정 \\
+\hline
+{\em M\+A\+X\+C\+O\+IN} & 자판기 안에 들어있는 동전의 갯수를 50으로 초기화 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 23 of file Vending\+Machine\+Frame.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{V\+D\+Machine\+::\+Vending\+Machine\+Frame@{V\+D\+Machine\+::\+Vending\+Machine\+Frame}!Vending\+Machine\+Frame@{Vending\+Machine\+Frame}}
+\index{Vending\+Machine\+Frame@{Vending\+Machine\+Frame}!V\+D\+Machine\+::\+Vending\+Machine\+Frame@{V\+D\+Machine\+::\+Vending\+Machine\+Frame}}
+\subsubsection[{\texorpdfstring{Vending\+Machine\+Frame()}{VendingMachineFrame()}}]{\setlength{\rightskip}{0pt plus 5cm}V\+D\+Machine.\+Vending\+Machine\+Frame.\+Vending\+Machine\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_d_machine_1_1_vending_machine_frame_ab7111fa7a43314902474063faf9a530e}{}\label{class_v_d_machine_1_1_vending_machine_frame_ab7111fa7a43314902474063faf9a530e}
+프레임 설정 
+
+Definition at line 34 of file Vending\+Machine\+Frame.\+java.
+
+
+
+References V\+D\+Machine.\+Change.\+insert, V\+D\+Machine.\+Change.\+Insert\+Coin(), V\+D\+Machine.\+Change.\+Payback(), V\+D\+Machine.\+Product.\+setnum\+Of\+Purchase(), and V\+D\+Machine.\+Product.\+setnum\+Of\+Stock().
+
+
+
+Referenced by V\+D\+Machine.\+Vending\+Machine\+Frame.\+main().
+
+
+\begin{DoxyCode}
+34                                  \{
+35         setDefaultCloseOperation(JFrame.EXIT\_ON\_CLOSE);
+36 
+37         VendingMachinePanel = \textcolor{keyword}{new} VendingMachinePanel();
+38 
+39         add(\textcolor{keyword}{new} TitlePanel(), BorderLayout.NORTH); 
+40         add(VendingMachinePanel, BorderLayout.CENTER);
+41         add(\textcolor{keyword}{new} ButtonPanel(), BorderLayout.SOUTH); 
+42         
+43         setSize(850,800);
+44         setResizable(\textcolor{keyword}{false}); \textcolor{comment}{// 사용자가 프레임의 크기 조절할 수 없도록 설정}
+45         setVisible(\textcolor{keyword}{true});
+46     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+
+
+\subsection{Member Function Documentation}
+\index{V\+D\+Machine\+::\+Vending\+Machine\+Frame@{V\+D\+Machine\+::\+Vending\+Machine\+Frame}!main@{main}}
+\index{main@{main}!V\+D\+Machine\+::\+Vending\+Machine\+Frame@{V\+D\+Machine\+::\+Vending\+Machine\+Frame}}
+\subsubsection[{\texorpdfstring{main(\+String[] args)}{main(String[] args)}}]{\setlength{\rightskip}{0pt plus 5cm}static void V\+D\+Machine.\+Vending\+Machine\+Frame.\+main (
+\begin{DoxyParamCaption}
+\item[{String   \mbox{[}$\,$\mbox{]}}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_v_d_machine_1_1_vending_machine_frame_a60df9516f3b8666657b1878e3ccde2e6}{}\label{class_v_d_machine_1_1_vending_machine_frame_a60df9516f3b8666657b1878e3ccde2e6}
+
+
+Definition at line 481 of file Vending\+Machine\+Frame.\+java.
+
+
+
+References V\+D\+Machine.\+Vending\+Machine\+Frame.\+Vending\+Machine\+Frame().
+
+
+\begin{DoxyCode}
+481                                             \{
+482         \textcolor{keyword}{new} \hyperlink{class_v_d_machine_1_1_vending_machine_frame_ab7111fa7a43314902474063faf9a530e}{VendingMachineFrame}();
+483     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/pub/workspace/\+Vending\+Machine/src/\+V\+D\+Machine/\hyperlink{_vending_machine_frame_8java}{Vending\+Machine\+Frame.\+java}\end{DoxyCompactItemize}

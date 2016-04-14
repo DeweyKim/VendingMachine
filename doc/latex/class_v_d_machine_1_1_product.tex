@@ -1,0 +1,179 @@
+\hypertarget{class_v_d_machine_1_1_product}{}\section{V\+D\+Machine.\+Product Class Reference}
+\label{class_v_d_machine_1_1_product}\index{V\+D\+Machine.\+Product@{V\+D\+Machine.\+Product}}
+
+
+Collaboration diagram for V\+D\+Machine.\+Product\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_v_d_machine_1_1_product_a8c91ef431ab45f01827883a04e7794d6}{Product} (int stock, int sold)
+\item 
+void \hyperlink{class_v_d_machine_1_1_product_a853bc0832f83adbe94b72c7b0325924c}{setnum\+Of\+Stock} (int current\+Size)
+\item 
+void \hyperlink{class_v_d_machine_1_1_product_a80b96d732b8662e04e20b9ac42d341d1}{setnum\+Of\+Purchase} (int purchased)
+\item 
+int \hyperlink{class_v_d_machine_1_1_product_ad46403380a869a8bdc51d576e1f634af}{getnum\+Of\+Stock} ()
+\item 
+int \hyperlink{class_v_d_machine_1_1_product_a39a5c9ec9a5c53b37ce404c93ab93abc}{getnum\+Of\+Purchased} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_v_d_machine_1_1_product_a3d32f0cbdbca2827634d8743ab8a744b}{num\+Of\+Purchased}
+\item 
+int \hyperlink{class_v_d_machine_1_1_product_a8cb19a2414b353b0d928ad35e7dde1ee}{num\+Of\+Stock}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+자판기 상품의 팔린 갯수와 남아있는 갯수를 저장하는 클래스 
+\begin{DoxyParams}{Parameters}
+{\em num\+Of\+Purchased} & 팔린 갯수 \\
+\hline
+{\em num\+Of\+Stock} & 잔고 갯수 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file Product.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}!Product@{Product}}
+\index{Product@{Product}!V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{Product(int stock, int sold)}{Product(int stock, int sold)}}]{\setlength{\rightskip}{0pt plus 5cm}V\+D\+Machine.\+Product.\+Product (
+\begin{DoxyParamCaption}
+\item[{int}]{stock, }
+\item[{int}]{sold}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_d_machine_1_1_product_a8c91ef431ab45f01827883a04e7794d6}{}\label{class_v_d_machine_1_1_product_a8c91ef431ab45f01827883a04e7794d6}
+
+
+Definition at line 18 of file Product.\+java.
+
+
+\begin{DoxyCode}
+18                                       \{     \textcolor{comment}{//처음의 양은 최대 15개}
+19         this.\hyperlink{class_v_d_machine_1_1_product_a8cb19a2414b353b0d928ad35e7dde1ee}{numOfStock}=stock;
+20         this.\hyperlink{class_v_d_machine_1_1_product_a3d32f0cbdbca2827634d8743ab8a744b}{numOfPurchased}=sold;
+21     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}!getnum\+Of\+Purchased@{getnum\+Of\+Purchased}}
+\index{getnum\+Of\+Purchased@{getnum\+Of\+Purchased}!V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{getnum\+Of\+Purchased()}{getnumOfPurchased()}}]{\setlength{\rightskip}{0pt plus 5cm}int V\+D\+Machine.\+Product.\+getnum\+Of\+Purchased (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_d_machine_1_1_product_a39a5c9ec9a5c53b37ce404c93ab93abc}{}\label{class_v_d_machine_1_1_product_a39a5c9ec9a5c53b37ce404c93ab93abc}
+
+
+Definition at line 35 of file Product.\+java.
+
+
+
+References V\+D\+Machine.\+Product.\+num\+Of\+Purchased.
+
+
+\begin{DoxyCode}
+35                                    \{
+36         \textcolor{keywordflow}{return} \hyperlink{class_v_d_machine_1_1_product_a3d32f0cbdbca2827634d8743ab8a744b}{numOfPurchased};
+37     \}
+\end{DoxyCode}
+\index{V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}!getnum\+Of\+Stock@{getnum\+Of\+Stock}}
+\index{getnum\+Of\+Stock@{getnum\+Of\+Stock}!V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{getnum\+Of\+Stock()}{getnumOfStock()}}]{\setlength{\rightskip}{0pt plus 5cm}int V\+D\+Machine.\+Product.\+getnum\+Of\+Stock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_d_machine_1_1_product_ad46403380a869a8bdc51d576e1f634af}{}\label{class_v_d_machine_1_1_product_ad46403380a869a8bdc51d576e1f634af}
+
+
+Definition at line 31 of file Product.\+java.
+
+
+
+References V\+D\+Machine.\+Product.\+num\+Of\+Stock.
+
+
+\begin{DoxyCode}
+31                                \{
+32         \textcolor{keywordflow}{return} \hyperlink{class_v_d_machine_1_1_product_a8cb19a2414b353b0d928ad35e7dde1ee}{numOfStock};
+33     \}
+\end{DoxyCode}
+\index{V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}!setnum\+Of\+Purchase@{setnum\+Of\+Purchase}}
+\index{setnum\+Of\+Purchase@{setnum\+Of\+Purchase}!V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{setnum\+Of\+Purchase(int purchased)}{setnumOfPurchase(int purchased)}}]{\setlength{\rightskip}{0pt plus 5cm}void V\+D\+Machine.\+Product.\+setnum\+Of\+Purchase (
+\begin{DoxyParamCaption}
+\item[{int}]{purchased}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_d_machine_1_1_product_a80b96d732b8662e04e20b9ac42d341d1}{}\label{class_v_d_machine_1_1_product_a80b96d732b8662e04e20b9ac42d341d1}
+
+
+Definition at line 27 of file Product.\+java.
+
+
+
+Referenced by V\+D\+Machine.\+Vending\+Machine\+Frame.\+Vending\+Machine\+Frame().
+
+
+\begin{DoxyCode}
+27                                                \{
+28         this.\hyperlink{class_v_d_machine_1_1_product_a3d32f0cbdbca2827634d8743ab8a744b}{numOfPurchased}=purchased;
+29     \}
+\end{DoxyCode}
+\index{V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}!setnum\+Of\+Stock@{setnum\+Of\+Stock}}
+\index{setnum\+Of\+Stock@{setnum\+Of\+Stock}!V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{setnum\+Of\+Stock(int current\+Size)}{setnumOfStock(int currentSize)}}]{\setlength{\rightskip}{0pt plus 5cm}void V\+D\+Machine.\+Product.\+setnum\+Of\+Stock (
+\begin{DoxyParamCaption}
+\item[{int}]{current\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_d_machine_1_1_product_a853bc0832f83adbe94b72c7b0325924c}{}\label{class_v_d_machine_1_1_product_a853bc0832f83adbe94b72c7b0325924c}
+
+
+Definition at line 23 of file Product.\+java.
+
+
+
+Referenced by V\+D\+Machine.\+Vending\+Machine\+Frame.\+Vending\+Machine\+Frame().
+
+
+\begin{DoxyCode}
+23                                               \{
+24         this.\hyperlink{class_v_d_machine_1_1_product_a8cb19a2414b353b0d928ad35e7dde1ee}{numOfStock}=currentSize;
+25     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}!num\+Of\+Purchased@{num\+Of\+Purchased}}
+\index{num\+Of\+Purchased@{num\+Of\+Purchased}!V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{num\+Of\+Purchased}{numOfPurchased}}]{\setlength{\rightskip}{0pt plus 5cm}int V\+D\+Machine.\+Product.\+num\+Of\+Purchased\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_v_d_machine_1_1_product_a3d32f0cbdbca2827634d8743ab8a744b}{}\label{class_v_d_machine_1_1_product_a3d32f0cbdbca2827634d8743ab8a744b}
+
+
+Definition at line 15 of file Product.\+java.
+
+
+
+Referenced by V\+D\+Machine.\+Product.\+getnum\+Of\+Purchased().
+
+\index{V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}!num\+Of\+Stock@{num\+Of\+Stock}}
+\index{num\+Of\+Stock@{num\+Of\+Stock}!V\+D\+Machine\+::\+Product@{V\+D\+Machine\+::\+Product}}
+\subsubsection[{\texorpdfstring{num\+Of\+Stock}{numOfStock}}]{\setlength{\rightskip}{0pt plus 5cm}int V\+D\+Machine.\+Product.\+num\+Of\+Stock\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_v_d_machine_1_1_product_a8cb19a2414b353b0d928ad35e7dde1ee}{}\label{class_v_d_machine_1_1_product_a8cb19a2414b353b0d928ad35e7dde1ee}
+
+
+Definition at line 16 of file Product.\+java.
+
+
+
+Referenced by V\+D\+Machine.\+Product.\+getnum\+Of\+Stock().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/pub/workspace/\+Vending\+Machine/src/\+V\+D\+Machine/\hyperlink{_product_8java}{Product.\+java}\end{DoxyCompactItemize}

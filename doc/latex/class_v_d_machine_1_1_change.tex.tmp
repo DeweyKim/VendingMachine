@@ -1,0 +1,222 @@
+\hypertarget{class_v_d_machine_1_1_change}{}\section{V\+D\+Machine.\+Change Class Reference}
+\label{class_v_d_machine_1_1_change}\index{V\+D\+Machine.\+Change@{V\+D\+Machine.\+Change}}
+
+
+Inheritance diagram for V\+D\+Machine.\+Change\+:
+% FIG 0
+
+
+Collaboration diagram for V\+D\+Machine.\+Change\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_v_d_machine_1_1_change_ac69dcaaf6e84878f5edefc042136364a}{Change} ()
+\item 
+void \hyperlink{class_v_d_machine_1_1_change_ad8db10eb15f9a3ad2411f5a33237f078}{Payback} (int money)
+\item 
+void \hyperlink{class_v_d_machine_1_1_change_a89c6a03f6bd591ee5a48969b1856fe59}{Insert\+Coin} (int i)
+\item 
+void \hyperlink{class_v_d_machine_1_1_change_a300df3e82a75207104ce53b11528c0e8}{Show\+Payback} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int\mbox{[}$\,$\mbox{]} \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert} = new int\mbox{[}4\mbox{]}
+\item 
+int\mbox{[}$\,$\mbox{]} \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus} = new int\mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+거스름돈을 돌려주는 클래스 
+\begin{DoxyParams}{Parameters}
+{\em insert\mbox{[}4\mbox{]}} & \mbox{[}0\mbox{]}부터 \mbox{[}3\mbox{]}까지 각각 10원,50원,100원,500원의 잔고를 가리킴 \\
+\hline
+{\em minus\mbox{[}4\mbox{]}} & \mbox{[}0\mbox{]}부터 \mbox{[}3\mbox{]}까지 고객에게 돌려줄 동전의 갯수를 나타냄 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file Change.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{V\+D\+Machine\+::\+Change@{V\+D\+Machine\+::\+Change}!Change@{Change}}
+\index{Change@{Change}!V\+D\+Machine\+::\+Change@{V\+D\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{Change()}{Change()}}]{\setlength{\rightskip}{0pt plus 5cm}V\+D\+Machine.\+Change.\+Change (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_d_machine_1_1_change_ac69dcaaf6e84878f5edefc042136364a}{}\label{class_v_d_machine_1_1_change_ac69dcaaf6e84878f5edefc042136364a}
+처음에 자판기에 들어있는 동전은 각 50개씩 
+
+Definition at line 25 of file Change.\+java.
+
+
+\begin{DoxyCode}
+25                     \{ 
+26         this.\hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[0] = 50;
+27         this.\hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[1] = 50;
+28         this.\hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[2] = 50;
+29         this.\hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[3] = 50;
+30     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{V\+D\+Machine\+::\+Change@{V\+D\+Machine\+::\+Change}!Insert\+Coin@{Insert\+Coin}}
+\index{Insert\+Coin@{Insert\+Coin}!V\+D\+Machine\+::\+Change@{V\+D\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{Insert\+Coin(int i)}{InsertCoin(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void V\+D\+Machine.\+Change.\+Insert\+Coin (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_d_machine_1_1_change_a89c6a03f6bd591ee5a48969b1856fe59}{}\label{class_v_d_machine_1_1_change_a89c6a03f6bd591ee5a48969b1856fe59}
+Vending\+Machine\+Frame에서 동전버튼을 누르면 이 함수가 실행됨 
+\begin{DoxyParams}{Parameters}
+{\em i} & Vending\+Machine\+Frame에서 각 동전별로 지정된 번호를 가리킴 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 80 of file Change.\+java.
+
+
+
+Referenced by V\+D\+Machine.\+Vending\+Machine\+Frame.\+Vending\+Machine\+Frame().
+
+
+\begin{DoxyCode}
+80                                   \{
+81         \textcolor{keywordflow}{if} (i == 0)
+82             \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[0]++;
+83         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i == 1)
+84             \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[1]++;
+85         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i == 2)
+86             \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[2]++;
+87         \textcolor{keywordflow}{else}
+88             \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[3]++;
+89     \}
+\end{DoxyCode}
+\index{V\+D\+Machine\+::\+Change@{V\+D\+Machine\+::\+Change}!Payback@{Payback}}
+\index{Payback@{Payback}!V\+D\+Machine\+::\+Change@{V\+D\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{Payback(int money)}{Payback(int money)}}]{\setlength{\rightskip}{0pt plus 5cm}void V\+D\+Machine.\+Change.\+Payback (
+\begin{DoxyParamCaption}
+\item[{int}]{money}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_d_machine_1_1_change_ad8db10eb15f9a3ad2411f5a33237f078}{}\label{class_v_d_machine_1_1_change_ad8db10eb15f9a3ad2411f5a33237f078}
+동전의 갯수를 최소화하기 위함 
+
+Definition at line 34 of file Change.\+java.
+
+
+
+References V\+D\+Machine.\+Change.\+Show\+Payback().
+
+
+
+Referenced by V\+D\+Machine.\+Vending\+Machine\+Frame.\+Vending\+Machine\+Frame().
+
+
+\begin{DoxyCode}
+34                                    \{ 
+35         \textcolor{keywordflow}{if} (500 * \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[3] + 100 * \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[2] + 50 * \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[1] + 10 * 
+      \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[0] >= money) \{ \textcolor{comment}{//남아있는 동전의 잔고로 잔돈을 돌려줄 수 있을 때}
+36             \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[3] = money / 500; 
+37             \textcolor{keywordflow}{if} (\hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[3] >= \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[3])   \textcolor{comment}{//현재 있는 500원의 수가 돌려줄 500원의 갯수보다 많으면}
+38                 money = money % 500;    \textcolor{comment}{//500원을 최대한 돌려주고 100원단위로 넘어감    }
+39             \textcolor{keywordflow}{else} \{                      \textcolor{comment}{//그렇지 않으면}
+40                 money = money - 500 * \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[3];  \textcolor{comment}{//일단 있는 500원을 다 주고 나머지 돈은 100원 단위에서 처리하게 함}
+41                 \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[3] = insert[3];
+42             \}
+43             \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[2] = money / 100;
+44             \textcolor{keywordflow}{if} (\hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[2] >= \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[2])
+45                 money = money % 100;
+46             \textcolor{keywordflow}{else} \{
+47                 money = money - 100 * \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[2];
+48                 \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[2] = insert[2];
+49             \}
+50             \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[1] = money / 50;
+51             \textcolor{keywordflow}{if} (\hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[1] >= \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[1])
+52                 money = money % 50;
+53             \textcolor{keywordflow}{else} \{
+54                 money = money - 50 * \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[1];
+55                 \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[1] = insert[1];
+56             \}
+57 
+58             \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[0] = money / 10;
+59             \textcolor{keywordflow}{if} (\hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[0] >= \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[0])
+60                 money = money % 10;
+61             \textcolor{keywordflow}{else} \{
+62                 money = money - 10 * \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[0];
+63                 \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[0] = insert[0];
+64             \}
+65             \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[0] = \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[0] - \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[0]; \textcolor{comment}{// 고객에게 돌려준 갯수만큼을 뺀 현재 자판기에 남아있는 동전의 갯수}
+66             \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[1] = \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[1] - minus[1];
+67             \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[2] = \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[2] - minus[2];
+68             \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[3] = \hyperlink{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{insert}[3] - minus[3];
+69             \hyperlink{class_v_d_machine_1_1_change_a300df3e82a75207104ce53b11528c0e8}{ShowPayback}();       \textcolor{comment}{//거슬러줌}
+70         \}
+71         \textcolor{keywordflow}{else}\{       \textcolor{comment}{//현재 있는 동전으로 돈을 거슬러 줄 수 없을 때}
+72             JOptionPane.showMessageDialog(null,
+73                     \textcolor{stringliteral}{"동전이 부족해서 반환되었습니다."},\textcolor{stringliteral}{"거스름돈 나왔습니다."}, JOptionPane.INFORMATION\_MESSAGE);
+74         \}
+75     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\index{V\+D\+Machine\+::\+Change@{V\+D\+Machine\+::\+Change}!Show\+Payback@{Show\+Payback}}
+\index{Show\+Payback@{Show\+Payback}!V\+D\+Machine\+::\+Change@{V\+D\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{Show\+Payback()}{ShowPayback()}}]{\setlength{\rightskip}{0pt plus 5cm}void V\+D\+Machine.\+Change.\+Show\+Payback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_v_d_machine_1_1_change_a300df3e82a75207104ce53b11528c0e8}{}\label{class_v_d_machine_1_1_change_a300df3e82a75207104ce53b11528c0e8}
+고객에게 얼마를 돌려줄지 출력 
+
+Definition at line 93 of file Change.\+java.
+
+
+
+Referenced by V\+D\+Machine.\+Change.\+Payback().
+
+
+\begin{DoxyCode}
+93                               \{
+94         JOptionPane.showMessageDialog(null,
+95                 \textcolor{stringliteral}{"500원:"} + \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[3] + \textcolor{stringliteral}{"\(\backslash\)n"} + \textcolor{stringliteral}{"100원:"} + \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[2] + \textcolor{stringliteral}{"\(\backslash\)n"} + \textcolor{stringliteral}{"50원:"} + 
+      \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[1] + \textcolor{stringliteral}{"\(\backslash\)n"} + \textcolor{stringliteral}{"10원:"} + \hyperlink{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{minus}[0],
+96                 \textcolor{stringliteral}{"거스름돈 나왔습니다."}, JOptionPane.INFORMATION\_MESSAGE);
+97     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{V\+D\+Machine\+::\+Change@{V\+D\+Machine\+::\+Change}!insert@{insert}}
+\index{insert@{insert}!V\+D\+Machine\+::\+Change@{V\+D\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{insert}{insert}}]{\setlength{\rightskip}{0pt plus 5cm}int \mbox{[}$\,$\mbox{]} V\+D\+Machine.\+Change.\+insert = new int\mbox{[}4\mbox{]}}\hypertarget{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}{}\label{class_v_d_machine_1_1_change_a9878b3edc53e15f5cc2ffd3dc113877a}
+
+
+Definition at line 17 of file Change.\+java.
+
+
+
+Referenced by V\+D\+Machine.\+Vending\+Machine\+Frame.\+Vending\+Machine\+Frame().
+
+\index{V\+D\+Machine\+::\+Change@{V\+D\+Machine\+::\+Change}!minus@{minus}}
+\index{minus@{minus}!V\+D\+Machine\+::\+Change@{V\+D\+Machine\+::\+Change}}
+\subsubsection[{\texorpdfstring{minus}{minus}}]{\setlength{\rightskip}{0pt plus 5cm}int \mbox{[}$\,$\mbox{]} V\+D\+Machine.\+Change.\+minus = new int\mbox{[}4\mbox{]}}\hypertarget{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}{}\label{class_v_d_machine_1_1_change_a1868b5a0b99bd906688723f33b892c1d}
+
+
+Definition at line 18 of file Change.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/pub/workspace/\+Vending\+Machine/src/\+V\+D\+Machine/\hyperlink{_change_8java}{Change.\+java}\end{DoxyCompactItemize}

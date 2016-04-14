@@ -1,0 +1,17 @@
+digraph "VDMachine.VendingMachineFrame.VendingMachineFrame"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="VDMachine.VendingMachine\lFrame.VendingMachineFrame",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="VDMachine.Change.InsertCoin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_d_machine_1_1_change.html#a89c6a03f6bd591ee5a48969b1856fe59"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="VDMachine.Change.Payback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_d_machine_1_1_change.html#ad8db10eb15f9a3ad2411f5a33237f078"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="VDMachine.Change.ShowPayback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_d_machine_1_1_change.html#a300df3e82a75207104ce53b11528c0e8"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="VDMachine.Product.setnum\lOfPurchase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_d_machine_1_1_product.html#a80b96d732b8662e04e20b9ac42d341d1"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="VDMachine.Product.setnum\lOfStock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_v_d_machine_1_1_product.html#a853bc0832f83adbe94b72c7b0325924c"];
+}
